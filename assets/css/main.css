@@ -1,8 +1,58 @@
 /*default fonts start*/
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Regular.woff') format('woff'),
+    url('./fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight: normal;  
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('./fonts/Gilroy-Light.woff') format('woff'),
+    url('./fonts/Gilroy-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('./fonts/Gilroy-Medium.woff') format('woff'),
+    url('./fonts/Gilroy-Medium.woff2') format('woff2');
+    font-weight:500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('./fonts/Gilroy-Regular.woff') format('woff'),
+    url('./fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight:600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('./fonts/Gilroy-Bold.woff') format('woff'),
+    url('./fonts/Gilroy-Bold.woff2') format('woff2');
+    font-weight:bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url('./fonts/Gilroy-Black.woff') format('woff'),
+    url('./fonts/Gilroy-Black.woff2') format('woff2');
+    font-weight:900;
+    font-style: normal;
+}
 
 /*default fonts over*/
 
 /*css general settings start*/
+h1,h2,h3,h4,h5,h6,p,span,li,a,button,th,td,textarea,input,select{
+    font-family: 'Gilroy';
+}
 
 /*css general settings over*/
 
