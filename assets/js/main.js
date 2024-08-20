@@ -23,7 +23,7 @@
   }
 
 
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".productDetailThumbnail", {
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
@@ -31,14 +31,10 @@
     direction: "vertical", // Thumbnail sliderın dikey olarak hizalanması
   });
   
-  var swiper2 = new Swiper(".mySwiper2", {
+  var swiper2 = new Swiper(".productDetailSlider", {
     spaceBetween: 10,
     thumbs: {
       swiper: swiper,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
     },
   });
   

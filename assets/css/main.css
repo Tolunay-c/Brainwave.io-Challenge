@@ -40,6 +40,14 @@
 }
 
 @font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('./fonts/Gilroy-Extrabold.woff') format('woff'),
+    url('./fonts/Gilroy-ExtraBold.woff2') format('woff2');
+    font-weight:800;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Gilroy-Black';
     src: url('./fonts/Gilroy-Black.woff') format('woff'),
     url('./fonts/Gilroy-Black.woff2') format('woff2');
@@ -71,6 +79,7 @@ body{
 
 h1,h2,h3,h4,h5,h6,p,span,li,a,button,th,td,textarea,input,select,label{
     font-family: 'Gilroy';
+    
 }
 
 
@@ -201,6 +210,21 @@ a{
     letter-spacing: 0.1rem;
 }
 
+.fs-xxl{
+    font-size: 3.75rem;
+}
+
+.fs-lg{
+    font-size: 3rem;
+}
+.fw-black{
+    font-family: 'Gilroy-Black';
+}
+
+.fw-extra-bold{
+    font-family: 'Gilroy-ExtraBold';
+}
+
 .increment-btn, .decrement-btn{
     width: 30px;
     height: 30px;
@@ -241,62 +265,6 @@ a{
 
 
 
-
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .mySwiper2 {
-    height: 500px; /* Ana sliderın yüksekliği */
-    width: 92%; /* Ana sliderın genişliği */
-
-  }
-  
-  .mySwiper {
-    height: 300px; /* Thumbnail sliderın yüksekliği */
-    width: 8%; /* Thumbnail sliderın genişliği */
-    box-sizing: border-box;
-    margin-right: 20px; /* Thumbnail slider ile aradaki boşluk */
-  
-  }
-  
-  .mySwiper .swiper-slide {
-    height: 20%; /* Her bir thumbnail'in yüksekliği */
-    opacity: 1;
-    cursor: pointer;
-
-  }
-  
-  .mySwiper .swiper-slide-thumb-active {
-    opacity: 1;
-  }
-  
-  .mySwiper .swiper-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .mySwiper2 .swiper-wrapper {
-    margin: 0;
-  }
   
 
 
@@ -330,6 +298,75 @@ a{
     color: var(--project-third-color);
 }
 /*navbar over*/
+
+
+
+
+
+
+
+
+/*product-detail slider start*/
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .productDetailSlider {
+    height: 500px; /* Ana sliderın yüksekliği */
+    width: 95%; /* Ana sliderın genişliği */
+
+  }
+  
+  .productDetailThumbnail {
+    height: 300px; /* Thumbnail sliderın yüksekliği */
+    width: 5%; /* Thumbnail sliderın genişliği */
+    box-sizing: border-box;
+    margin-right: 20px; /* Thumbnail slider ile aradaki boşluk */
+  }
+
+  
+  .productDetailThumbnail .swiper-slide {
+    height: 20%; /* Her bir thumbnail'in yüksekliği */
+    opacity: 1;
+    cursor: pointer;
+
+  }
+  
+  .productDetailThumbnail .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  .productDetailThumbnail .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .productDetailSlider .swiper-wrapper {
+    margin: 0;
+  }
+
+/*product-detail slider over*/
 
 
 
