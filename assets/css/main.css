@@ -134,7 +134,9 @@ a{
  --project-third-color:#362bce;
  --project-fourth-color:#5747eb;
  --project-fifth-color:#F4F7FA;
- 
+ --project-sixth-color:#F64B4B;
+ --project-seventh-color:#68D585;
+ --project-eighth-color:#FFAC4D;
 }
 
 .primary-text-color{
@@ -153,6 +155,14 @@ a{
     color: var(--project-third-color);
 }
 
+.sixth-text-color{
+    color: var(--project-sixth-color);
+}
+
+.eighth-text-color{
+    color: var(--project-eighth-color);
+}
+
 .primary-bg-color{
     background-color: var(--project-primary-color);
 }
@@ -165,10 +175,51 @@ a{
     background-color: var(--project-fifth-color);
 }
 
+.sixth-bg-color{
+    background-color: var(--project-sixth-color);
+}
+
+.seventh-bg-color{
+    background-color: var(--project-seventh-color);
+}
+
+.eighth-bg-color{
+    background-color: var(--project-eighth-color);
+}
+
 .ls-sm {
     letter-spacing: 0.1rem;
 }
 
+
+.chevron-right-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Collapse açık olduğunda ok simgesini döndür */
+[aria-expanded="true"] .chevron-right-icon {
+    transform: rotate(-90deg); /* Sağa bakan oku 90 derece döndür */
+}
+
+#nav-tab .nav-link {
+    position: relative;
+    padding-bottom: 10px;
+    color:var(--project-primary-color);
+  }
+
+  #nav-tab .nav-link.active {
+    color: var(--project-secondary-color); /* Aktif sekmenin metin rengi kırmızı olacak */
+  }
+
+  #nav-tab .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--project-secondary-color);
+  }
 /*project general settings over*/
 
 
