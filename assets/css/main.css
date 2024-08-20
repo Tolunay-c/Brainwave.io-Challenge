@@ -47,19 +47,161 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Rubik-Bold';
+    src: url('./fonts/Rubik-Bold.woff') format('woff'),
+    url('./fonts/Rubik-Bold.woff2') format('woff2');
+    font-weight:bold;
+    font-style: normal;
+}
 /*default fonts over*/
 
 /*css general settings start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
 h1,h2,h3,h4,h5,h6,p,span,li,a,button,th,td,textarea,input,select{
     font-family: 'Gilroy';
+}
+
+
+
+a{
+    text-decoration: none;
 }
 
 /*css general settings over*/
 
 /*bootstrap general settings start*/
+.row{
+    margin: 0;
+}
+.col,.col-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xl-1,.col-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xl-2,.col-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xl-3,.col-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xl-4,.col-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xl-5,.col-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xl-6,.col-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xl-7,.col-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xl-8,.col-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xl-9,.col-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xl-10,.col-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xl-11,.col-12,.col-sm-12,.col-md-12,.col-lg-12,.col-xl-12{
+    padding: 0;
+}
+
+.btn-primary{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--project-secondary-color);
+    --bs-btn-border-color: var(--project-secondary-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #3A2FCB  ;
+    --bs-btn-hover-border-color: #3A2FCB  ;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #3A2FCB;
+    --bs-btn-active-border-color: #3A2FCB;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--project-secondary-color);
+    --bs-btn-disabled-border-color: var(--project-secondary-color);
+}
+
+.btn-primary-low-opacity{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--project-secondary-color-low-opacity);
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--project-secondary-color-low-opacity);
+    --bs-btn-hover-border-color: #3A2FCB  ;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #3A2FCB;
+    --bs-btn-active-border-color: #3A2FCB;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--project-secondary-color);
+    --bs-btn-disabled-border-color: var(--project-secondary-color);
+}
 
 /*bootstrap general settings over*/
 
 /*project general settings start*/
+:root{
+ --project-primary-color: #161C2D;
+ --project-secondary-color: #473BF0;
+ --project-secondary-color-low-opacity: rgba(71, 59, 240, 0.08);
+ --project-primary-color-hover:#362bce;
+ --project-third-color:#362bce;
+ --project-fourth-color:#5747eb;
+ --project-fifth-color:#F4F7FA;
+ 
+}
+
+.primary-text-color{
+    color: var(--project-primary-color);
+}
+
+.secondary-text-color{
+    color: var(--project-secondary-color);
+}
+
+.third-text-color{
+    color: var(--project-fourth-color);
+}
+
+.fourth-text-color{
+    color: var(--project-third-color);
+}
+
+.primary-bg-color{
+    background-color: var(--project-primary-color);
+}
+
+.secondary-bg-color{
+    background-color: var(--project-secondary-color);
+}
+
+.fifth-bg-color{
+    background-color: var(--project-fifth-color);
+}
+
+.ls-sm {
+    letter-spacing: 0.1rem;
+}
 
 /*project general settings over*/
+
+
+/*navbar start*/
+
+.navbar-nav{
+    --bs-nav-link-color:var(--project-primary-color);
+    --bs-nav-link-hover-color:var(--project-primary-color-hover);
+}
+
+.logo-text{
+    font-family: 'Rubik-Bold';   
+}
+
+.navbar-footer .nav-link {
+    color:white;
+}
+
+.navbar-footer .nav-link:hover {
+    color: var(--project-third-color);
+}
+/*navbar over*/
+
+
+
+
+
+
+
+
+@media screen and (min-width:280px) and (max-width:992px) {
+    .border-start-none{
+        --bs-border-width:0;
+        --bs-border-color:none;
+    }
+}
