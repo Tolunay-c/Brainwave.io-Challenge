@@ -69,7 +69,7 @@ body{
     font-weight: normal;
 }
 
-h1,h2,h3,h4,h5,h6,p,span,li,a,button,th,td,textarea,input,select{
+h1,h2,h3,h4,h5,h6,p,span,li,a,button,th,td,textarea,input,select,label{
     font-family: 'Gilroy';
 }
 
@@ -123,6 +123,11 @@ a{
     --bs-btn-disabled-border-color: var(--project-secondary-color);
 }
 
+.form-control:focus, .form-select:focus {
+    border-color: var(--project-secondary-color);
+    box-shadow: 0 0 0 0.25rem rgba(71, 59, 240, 0.25);
+}
+
 /*bootstrap general settings over*/
 
 /*project general settings start*/
@@ -137,6 +142,7 @@ a{
  --project-sixth-color:#F64B4B;
  --project-seventh-color:#68D585;
  --project-eighth-color:#FFAC4D;
+ --project-ninth-color:#E7E9ED;
 }
 
 .primary-text-color{
@@ -187,10 +193,21 @@ a{
     background-color: var(--project-eighth-color);
 }
 
+.ninth-bg-color{
+    background-color: var(--project-ninth-color);
+}
+
 .ls-sm {
     letter-spacing: 0.1rem;
 }
 
+.increment-btn, .decrement-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--project-primary-color);
+    cursor: pointer;
+}
 
 .chevron-right-icon {
     transition: transform 0.3s ease;
@@ -222,6 +239,77 @@ a{
   }
 /*project general settings over*/
 
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .mySwiper2 {
+    height: 500px; /* Ana sliderın yüksekliği */
+    width: 92%; /* Ana sliderın genişliği */
+
+  }
+  
+  .mySwiper {
+    height: 300px; /* Thumbnail sliderın yüksekliği */
+    width: 8%; /* Thumbnail sliderın genişliği */
+    box-sizing: border-box;
+    margin-right: 20px; /* Thumbnail slider ile aradaki boşluk */
+  
+  }
+  
+  .mySwiper .swiper-slide {
+    height: 20%; /* Her bir thumbnail'in yüksekliği */
+    opacity: 1;
+    cursor: pointer;
+
+  }
+  
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  .mySwiper .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mySwiper2 .swiper-wrapper {
+    margin: 0;
+  }
+  
+
+
+.card-number{
+
+}
+
+
+.card-number-visa{
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+}
 
 /*navbar start*/
 
