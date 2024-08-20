@@ -137,6 +137,10 @@ a{
     box-shadow: 0 0 0 0.25rem rgba(71, 59, 240, 0.25);
 }
 
+.form-switch .form-check-input{
+    width: 5rem;
+    height: 2rem;
+}
 /*bootstrap general settings over*/
 
 /*project general settings start*/
@@ -186,6 +190,10 @@ a{
     background-color: var(--project-secondary-color);
 }
 
+.secondary-bg-color-low-opacity{
+    background-color: var(--project-secondary-color-low-opacity);
+}
+
 .fifth-bg-color{
     background-color: var(--project-fifth-color);
 }
@@ -225,6 +233,13 @@ a{
     font-family: 'Gilroy-ExtraBold';
 }
 
+.w-85{
+    width: 85%;
+}
+
+.border-bottom-low-opacity{
+    border-bottom: 1px solid rgba(231, 233, 237, 0.13);
+}
 .increment-btn, .decrement-btn{
     width: 30px;
     height: 30px;
@@ -279,6 +294,13 @@ a{
     transform: translate(-50%, -50%);
 }
 
+
+/*header start*/
+.header{
+    width: 100%;
+    height: 100%;
+}
+
 /*navbar start*/
 
 .navbar-nav{
@@ -299,6 +321,7 @@ a{
 }
 /*navbar over*/
 
+/*header over*/
 
 
 
