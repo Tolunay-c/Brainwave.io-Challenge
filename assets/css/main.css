@@ -1,59 +1,7 @@
 /*default fonts start*/
-@font-face {
-    font-family: 'Gilroy';
-    src: url('./fonts/Gilroy-Regular.woff') format('woff'),
-    url('./fonts/Gilroy-Regular.woff2') format('woff2');
-    font-weight: normal;  
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy-Light';
-    src: url('./fonts/Gilroy-Light.woff') format('woff'),
-    url('./fonts/Gilroy-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy-Medium';
-    src: url('./fonts/Gilroy-Medium.woff') format('woff'),
-    url('./fonts/Gilroy-Medium.woff2') format('woff2');
-    font-weight:500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy-SemiBold';
-    src: url('./fonts/Gilroy-Regular.woff') format('woff'),
-    url('./fonts/Gilroy-Regular.woff2') format('woff2');
-    font-weight:600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy-Bold';
-    src: url('./fonts/Gilroy-Bold.woff') format('woff'),
-    url('./fonts/Gilroy-Bold.woff2') format('woff2');
-    font-weight:bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy-ExtraBold';
-    src: url('./fonts/Gilroy-Extrabold.woff') format('woff'),
-    url('./fonts/Gilroy-ExtraBold.woff2') format('woff2');
-    font-weight:800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gilroy-Black';
-    src: url('./fonts/Gilroy-Black.woff') format('woff'),
-    url('./fonts/Gilroy-Black.woff2') format('woff2');
-    font-weight:900;
-    font-style: normal;
-}
+/*Gilroy fonts file*/
+@import url("./fonts/font.css");
+/*Gilroy fonts file*/
 
 @font-face {
     font-family: 'Rubik-Bold';
@@ -81,8 +29,6 @@ h1,h2,h3,h4,h5,h6,p,span,li,a,button,th,td,textarea,input,select,label{
     font-family: 'Gilroy';
     
 }
-
-
 
 a{
     text-decoration: none;
@@ -144,6 +90,8 @@ a{
 /*bootstrap general settings over*/
 
 /*project general settings start*/
+
+/*project color start*/
 :root{
  --project-primary-color: #161C2D;
  --project-secondary-color: #473BF0;
@@ -156,8 +104,11 @@ a{
  --project-seventh-color:#68D585;
  --project-eighth-color:#FFAC4D;
  --project-ninth-color:#E7E9ED;
+ --project-tenth-color:#7D818D;
 }
+/*project color over*/
 
+/*project text color start*/
 .primary-text-color{
     color: var(--project-primary-color);
 }
@@ -178,10 +129,20 @@ a{
     color: var(--project-sixth-color);
 }
 
+.seventh-text-color{
+    color: var(--project-seventh-color);
+}
+
 .eighth-text-color{
     color: var(--project-eighth-color);
 }
 
+.tenth-text-color{
+    color: var(--project-tenth-color);
+}
+/*project text color over*/
+
+/*project background color start*/
 .primary-bg-color{
     background-color: var(--project-primary-color);
 }
@@ -213,11 +174,15 @@ a{
 .ninth-bg-color{
     background-color: var(--project-ninth-color);
 }
+/*project background color over*/
 
+/*letter spacing start*/
 .ls-sm {
     letter-spacing: 0.1rem;
 }
+/*letter spacing over*/
 
+/*font size start*/
 .fs-xxl{
     font-size: 3.75rem;
 }
@@ -225,21 +190,25 @@ a{
 .fs-lg{
     font-size: 3rem;
 }
-.fw-black{
-    font-family: 'Gilroy-Black';
-}
+/*font size over*/
 
-.fw-extra-bold{
-    font-family: 'Gilroy-ExtraBold';
-}
-
+/*width start*/
 .w-85{
     width: 85%;
 }
+.w-15{
+    width: 15%;
+}
+/*width over*/
 
 .border-bottom-low-opacity{
     border-bottom: 1px solid rgba(231, 233, 237, 0.13);
 }
+
+/*project general settings over*/
+
+
+/*input increase decrease start*/
 .increment-btn, .decrement-btn{
     width: 30px;
     height: 30px;
@@ -247,7 +216,10 @@ a{
     color: var(--project-primary-color);
     cursor: pointer;
 }
+/*input increase decrease start*/
 
+
+/*f.a.q dropdown start*/
 .chevron-right-icon {
     transition: transform 0.3s ease;
 }
@@ -257,6 +229,9 @@ a{
     transform: rotate(-90deg); /* Sağa bakan oku 90 derece döndür */
 }
 
+/*f.a.q dropdown over*/
+
+/*nav tab description start*/
 #nav-tab .nav-link {
     position: relative;
     padding-bottom: 10px;
@@ -276,23 +251,15 @@ a{
     height: 1px;
     background-color: var(--project-secondary-color);
   }
-/*project general settings over*/
+/*nav tab description over*/
 
 
-
-  
-
-
-.card-number{
-
-}
-
-
-.card-number-visa{
-    top: 50%;
-    left: 97%;
+.position-input-location{
+    top: 47%;
+    left: 93%;
     transform: translate(-50%, -50%);
 }
+
 
 
 /*header start*/
@@ -301,7 +268,7 @@ a{
     height: 100%;
 }
 
-/*navbar start*/
+/*header navbar start*/
 
 .navbar-nav{
     --bs-nav-link-color:var(--project-primary-color);
@@ -319,19 +286,20 @@ a{
 .navbar-footer .nav-link:hover {
     color: var(--project-third-color);
 }
-/*navbar over*/
+/*header navbar over*/
 
 /*header over*/
 
 
-
-
+/*sections descriptions start*/
+.worldwide-coder,.meet-our-team,.product-detail-checkout{
+    padding: 4.5% 0;
+}
+/*sections descriptions end*/
 
 
 
 /*product-detail slider start*/
-
-
 
 .swiper {
     width: 100%;
@@ -356,14 +324,14 @@ a{
   }
   
   .productDetailSlider {
-    height: 500px; /* Ana sliderın yüksekliği */
-    width: 95%; /* Ana sliderın genişliği */
+    height: 550px; /* Ana sliderın yüksekliği */
+    width: 83%; /* Ana sliderın genişliği */
 
   }
   
   .productDetailThumbnail {
-    height: 300px; /* Thumbnail sliderın yüksekliği */
-    width: 5%; /* Thumbnail sliderın genişliği */
+    height: 350px; /* Thumbnail sliderın yüksekliği */
+    width: 12%; /* Thumbnail sliderın genişliği */
     box-sizing: border-box;
     margin-right: 20px; /* Thumbnail slider ile aradaki boşluk */
   }
@@ -397,6 +365,35 @@ a{
 
 
 
+@media (max-width: 768px) {
+    .position-relative.d-flex {
+      flex-direction: column; /* Küçük ekranlarda thumbnail slider altına gelsin */
+      align-items: center;
+    }
+  
+    .productDetailSlider {
+      height: 350px; /* Küçük ekranlarda ana slider yüksekliği */
+      width: 100%; /* Küçük ekranlarda tam genişlik */
+    }
+  
+    .productDetailThumbnail {
+      height: 180px; /* Küçük ekranlarda thumbnail slider yüksekliği */
+      width: 100%; /* Küçük ekranlarda tam genişlik */
+      margin-right: 0;
+      margin-bottom: 20px; /* Altına boşluk bırak */
+    }
+  
+    .productDetailThumbnail .swiper-slide {
+      height: 100%; /* Küçük ekranlarda thumbnail slider'da tam yükseklik */
+      width: 20%; /* Küçük ekranlarda her bir thumbnail genişliği */
+    }
+  
+    .productDetailThumbnail .swiper-wrapper {
+      flex-direction: row; /* Küçük ekranlarda thumbnail slider yatay olarak hizalanır */
+      gap: 15px;
+      padding: 15px 0px;
+    }
+  }
 
 @media screen and (min-width:280px) and (max-width:992px) {
     .border-start-none{
@@ -404,3 +401,13 @@ a{
         --bs-border-color:none;
     }
 }
+
+@media screen and (min-width:280px) and (max-width:450px) {
+    .position-input-location{
+        top: 47%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+

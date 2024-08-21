@@ -1,6 +1,6 @@
 
 
-
+/*input functions start*/ 
   function incrementValue() {
     var value = parseInt(document.getElementById('quantity').value, 10);
     value = isNaN(value) ? 1 : value;
@@ -21,7 +21,7 @@
       document.getElementById('quantity').value = 1;
     }
   }
-
+/*input functions over*/
 
   var swiper = new Swiper(".productDetailThumbnail", {
     spaceBetween: 10,
@@ -40,5 +40,14 @@
   
 
   $(document).ready(function(){
-    $('.card-number').inputmask('9999 9999 9999 9999'); // Kredi kartı formatı
+    $('.card-number').inputmask('9999 9999 9999 9999'); 
+});
+$(document).ready(function(){
+  $('.month-year-input').inputmask('99/99', { 
+      placeholder: 'MM/YY',  
+      alias: 'datetime',
+      inputFormat: 'mm/yy',
+      separator: '/',
+      clearIncomplete: true 
+  });
 });
