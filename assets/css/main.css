@@ -196,10 +196,17 @@ a{
 .w-85{
     width: 85%;
 }
+.w-95{
+    width: 95%;
+}
 .w-15{
     width: 15%;
 }
 /*width over*/
+
+.px-customize{
+    padding:0 5.5%;
+}
 
 .border-bottom-low-opacity{
     border-bottom: 1px solid rgba(231, 233, 237, 0.13);
@@ -261,6 +268,10 @@ a{
 }
 
 
+.shadow-customize{
+    box-shadow: 0px 34px 33px -23px rgba(22, 28, 45, 0.13);
+}
+
 
 /*header start*/
 .header{
@@ -292,7 +303,7 @@ a{
 
 
 /*sections descriptions start*/
-.worldwide-coder,.meet-our-team,.product-detail-checkout{
+.our-story,.worldwide-coder,.meet-our-team,.product-detail-checkout,.our-features,.login-screen{
     padding: 4.5% 0;
 }
 /*sections descriptions end*/

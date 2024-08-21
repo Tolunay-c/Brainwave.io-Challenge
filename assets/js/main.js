@@ -38,6 +38,19 @@
     },
   });
   
+  function togglePlan() {
+    const planDurationElements = document.querySelectorAll('.plan-duration');
+    const billedPeriodElements = document.querySelectorAll('.billed-period');
+    
+    planDurationElements.forEach(element => {
+      element.textContent = element.textContent === 'month' ? 'year' : 'month';
+    });
+  
+    billedPeriodElements.forEach(element => {
+      element.textContent = element.textContent === 'billed monthly' ? 'billed yearly' : 'billed monthly';
+    });
+  }
+  
 
   $(document).ready(function(){
     $('.card-number').inputmask('9999 9999 9999 9999'); 
